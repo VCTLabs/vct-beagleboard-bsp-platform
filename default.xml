@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="master"/>
+  <default sync-j="4" revision="fido"/>
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://git.yoctoproject.org/git" name="meta-ti"/>
@@ -9,14 +9,14 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
 
-  <project remote="yocto" revision="master" name="poky" path="bsp/poky"/>
-  <project remote="yocto" revision="master" name="meta-ti" path="bsp/meta-ti"/>
+  <project remote="yocto" revision="fido" name="poky" path="bsp/poky"/>
+  <project remote="yocto" revision="fido" name="meta-ti" path="bsp/meta-ti"/>
 
-  <project remote="meta-bb" revision="master" name="meta-beagleboard" path="bsp/meta-beagleboard"/>
+  <project remote="meta-bb" revision="fido" name="meta-beagleboard" path="bsp/meta-beagleboard"/>
 
-  <project remote="oe" revision="master" name="meta-openembedded" path="bsp/meta-openembedded"/>
+  <project remote="oe" revision="fido" name="meta-openembedded" path="bsp/meta-openembedded"/>
 
-  <project remote="vct" revision="master" name="meta-small-arm-extra" path="bsp/meta-small-arm-extra"/>
+  <project remote="vct" revision="fido" name="meta-small-arm-extra" path="bsp/meta-small-arm-extra"/>
 
 </manifest>
 
