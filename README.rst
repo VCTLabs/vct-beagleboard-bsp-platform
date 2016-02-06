@@ -43,16 +43,10 @@ to bsp/poky/build-dir unless you choose a different path above.
 
 See the default.xml file for repo and branch details.
 
-Contributing
-------------
-
-To contribute to this layer you should send the patches for review to the
-mailing list.
-
 Source code
 -----------
 
-Download the mainfest source here::
+Download the manifest source here::
 
   $ git clone https://github.com/VCTLabs/vct-beagleboard-bsp-platform
 
