@@ -27,7 +27,7 @@ At the end of the commands you have every metadata you need to start work with.
 
 To start a simple image build::
 
-  $ cd bsp/poky
+  $ cd poky
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
   $ ${EDITOR} conf/local.conf             # set MACHINE to beaglebone
   $ bitbake core-image-minimal
@@ -35,11 +35,12 @@ To start a simple image build::
 You can use any directory (build-dir above) to host your build.  The above commands will
 build an image for beaglebone using the core yocto BSP machine config and the default
 yocto-linux kernel.  You can replace the default BSP config with either meta-ti or the
-meta-beagleboard BSP.  This will provide a more optimal set of defaults for kernel and
-bootloader, as well as a bigger selection of kernels and TI support tools.
+meta-beagleboard BSP (plus meta-ti) however, the latter layers actually depend on the
+oe-core metadata rather than poky.  Try the oe-core-fido branch if you want to use them
+instead of poky.
 
 The main source code is checked out in the bsp dir above, and the build dir will default
-to bsp/poky/build-dir unless you choose a different path above.
+to poky/build-dir unless you choose a different path above.
 
 See the default.xml file for repo and branch details.
 
