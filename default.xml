@@ -4,17 +4,16 @@
   <default sync-j="4" revision="oe-jethro"/>
 
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
-  <remote fetch="git://git.openembedded.org/bitbake" name="bitbake"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
 
   <project remote="oe-core" revision="jethro" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="1.28" name="bitbake" path="oe-core/bitbake"/>
+
   <project remote="rcn" revision="master" name="meta-ti" path="oe-core/meta-ti"/>
 
   <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
-
-  <project remote="bitbake" revision="1.28" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
