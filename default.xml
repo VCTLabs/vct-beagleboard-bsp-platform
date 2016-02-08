@@ -3,20 +3,20 @@
 
   <default sync-j="4" revision="fido"/>
 
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="https://git.yoctoproject.org/git" name="meta-ti"/>
+  <remote fetch="https://github.com/openembedded" name="oe-core"/>
+  <remote fetch="git://git.openembedded.org/bitbake" name="bitbake"/>
+  <remote fetch="https://github.com/rcn-ee" name="meta-ti"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
-  <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
 
-  <project remote="yocto" revision="fido" name="poky" path="bsp/poky"/>
-  <project remote="yocto" revision="fido" name="meta-ti" path="bsp/meta-ti"/>
+  <project remote="oe-core" revision="fido" name="openembedded-core" path="oe-core"/>
+  <project remote="yocto" revision="fido" name="meta-ti" path="oe-core/meta-ti"/>
 
-  <project remote="meta-bb" revision="fido" name="meta-beagleboard" path="bsp/meta-beagleboard"/>
+  <project remote="meta-bb" revision="fido" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
-  <project remote="oe" revision="fido" name="meta-openembedded" path="bsp/meta-openembedded"/>
+  <project remote="bitbake" revision="" name="bitbake" path="oe-core/bitbake"/>
 
-  <project remote="vct" revision="fido" name="meta-small-arm-extra" path="bsp/meta-small-arm-extra"/>
+  <project remote="vct" revision="fido" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
 </manifest>
 
