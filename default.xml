@@ -6,7 +6,7 @@
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
-  <remote fetch="https://github.com/VCTLabs" name="vct"/>
+  <remote fetch="https://github.com/sarnold" name="vct"/>
 
   <project remote="oe-core" revision="jethro" name="openembedded-core" path="oe-core"/>
   <project remote="oe-core" revision="1.28" name="bitbake" path="oe-core/bitbake"/>
