@@ -35,7 +35,8 @@ To start a simple image build::
 You can use any directory (build-dir above) to host your build.  The above commands will
 build an image for beaglebone using the oe-core and either meta-ti BSP machine config or
 meta-beagleboard BSP (plus meta-ti deps).  Edit bblayers.conf to select the BSP dir,
-either meta-ti or meta-beagleboard/common-bsp.
+either meta-ti or meta-beagleboard/common-bsp.  If you have unbuildable packages, then
+add the approriate layer from meta-openembedded to your bblayers.conf file.
 
 .. note:: Use both for meta-beagleboard, or remove meta-beagleboard and leave meta-ti.
 
