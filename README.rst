@@ -20,10 +20,14 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir beagleboard-bsp
   $ cd beagleboard-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b fido
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-fido
   $ repo sync
 
 At the end of the commands you have every metadata you need to start work with.
+The branch yopu select above will checkout the corresponding branch HEAD commits
+on the configured branch for each repository.
+
+See the default.xml file for repo and branch details.
 
 To start a simple image build::
 
@@ -35,14 +39,15 @@ To start a simple image build::
 You can use any directory (build-dir above) to host your build.  The above commands will
 build an image for beaglebone using the core yocto BSP machine config and the default
 yocto-linux kernel.  You can replace the default BSP config with either meta-ti or the
-meta-beagleboard BSP (plus meta-ti) however, the latter layers actually depend on the
-oe-core metadata rather than poky.  Try the oe-core-fido branch if you want to use them
-instead of poky.
+meta-beagleboard BSP.  This will provide a more Beagle-centric set of defaults for kernel and
+bootloader, as well as a bigger selection of kernels and TI support tools.
 
 The main source code is checked out in the bsp dir above, and the build dir will default
 to poky/build-dir unless you choose a different path above.
 
-See the default.xml file for repo and branch details.
+.. note:: You need to replace the meta-yocto-bsp layer with either
+          the meta-ti layer (for the TI BSP) or both meta-ti and the
+          meta-beagleboard/common-bsp layers (for the beagleboard BSP).
 
 Source code
 -----------
@@ -60,7 +65,7 @@ For developers - jethro
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b jethro
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-jethro
 
 For intrepid developers and testers - master
 
@@ -71,5 +76,5 @@ breaks something that was working before.  Use with caution.
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b master-next
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-master
 
