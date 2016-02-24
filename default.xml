@@ -16,7 +16,7 @@
 
   <project remote="meta-bb" revision="fido" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
-  <project remote="vct" revision="fido" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+  <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
 </manifest>
 
