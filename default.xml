@@ -16,7 +16,7 @@
 
   <project remote="oe" revision="fido" name="meta-openembedded" path="poky/meta-openembedded"/>
 
-  <project remote="vct" revision="fido" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
+  <project remote="vct" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
 </manifest>
 
