@@ -7,6 +7,7 @@
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/sarnold" name="vct"/>
+  <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
   <project remote="oe-core" revision="fido" name="openembedded-core" path="oe-core"/>
   <project remote="oe-core" revision="fido" name="meta-openembedded" path="oe-core/meta-openembedded"/>
@@ -18,5 +19,6 @@
 
   <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
+  <project remote="ossystems" revision="master" name="meta-browser" path="oe-core/meta-browser"/>
 </manifest>
 
