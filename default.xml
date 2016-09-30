@@ -6,17 +6,17 @@
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
+  <remote fetch="https://github.com/koenkooi" name="meta-uav"/>
   <remote fetch="https://github.com/sarnold" name="vct"/>
   <remote fetch="https://github.com/bmwcarit" name="meta-ros"/>
-  <remote fetch="https://github.com/koenkooi" name="meta-uav"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
-  <project remote="vct" revision="krogoth" name="openembedded-core" path="oe-core"/>
-  <project remote="vct" revision="krogoth" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="oe-core" revision="krogoth" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="krogoth" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="oe-core" revision="1.30" name="bitbake" path="oe-core/bitbake"/>
 
-  <project remote="vct" revision="krogoth" name="meta-ti" path="oe-core/meta-ti"/>
+  <project remote="rcn" revision="krogoth" name="meta-ti" path="oe-core/meta-ti"/>
 
   <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
