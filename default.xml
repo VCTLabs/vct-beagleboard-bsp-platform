@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="oe-krogoth"/>
+  <default sync-j="4" revision="oe-morty"/>
 
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
-  <remote fetch="https://github.com/sarnold" name="vct"/>
+  <remote fetch="https://github.com/sarnold" name="sla"/>
+  <remote fetch="https://github.com/VCTLabs" name="vct"/>
   <remote fetch="https://github.com/bmwcarit" name="meta-ros"/>
   <remote fetch="https://github.com/koenkooi" name="meta-uav"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
-  <project remote="vct" revision="krogoth" name="openembedded-core" path="oe-core"/>
-  <project remote="vct" revision="krogoth" name="meta-openembedded" path="oe-core/meta-openembedded"/>
-  <project remote="oe-core" revision="1.30" name="bitbake" path="oe-core/bitbake"/>
+  <project remote="vct" revision="morty" name="openembedded-core" path="oe-core"/>
+  <project remote="vct" revision="morty" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="oe-core" revision="1.32" name="bitbake" path="oe-core/bitbake"/>
 
-  <project remote="vct" revision="krogoth" name="meta-ti" path="oe-core/meta-ti"/>
+  <project remote="vct" revision="morty" name="meta-ti" path="oe-core/meta-ti"/>
+  <project remote="vct" revision="morty" name="meta-ti" path="oe-core/meta-printing"/>
+  <project remote="vct" revision="morty" name="meta-qt5" path="oe-core/meta-qt5"/>
 
   <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
-  <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+  <project remote="sla" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
   <project remote="meta-ros" revision="master" name="meta-ros" path="oe-core/meta-ros"/>
   <project remote="meta-uav" revision="master" name="meta-uav" path="oe-core/meta-uav"/>
-  <project remote="meta-qt5" revision="krogoth" name="meta-qt5" path="oe-core/meta-qt5"/>
-  <project remote="ossystems" revision="master" name="meta-browser" path="oe-core/meta-browser"/>
+  <project remote="ossystems" revision="morty" name="meta-browser" path="oe-core/meta-browser"/>
 
 </manifest>
 
