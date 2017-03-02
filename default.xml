@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="poky-jethro"/>
+  <default sync-j="4" revision="poky-morty"/>
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://git.yoctoproject.org/git" name="meta-ti"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/sarnold" name="vct"/>
+  <remote fetch="https://github.com/sarnold" name="sla"/>
 
-  <project remote="yocto" revision="jethro" name="poky" path="poky"/>
-  <project remote="yocto" revision="master" name="meta-ti" path="poky/meta-ti"/>
+  <project remote="yocto" revision="morty" name="poky" path="poky"/>
+  <project remote="yocto" revision="morty" name="meta-ti" path="poky/meta-ti"/>
 
   <project remote="meta-bb" revision="master" name="meta-beagleboard" path="poky/meta-beagleboard"/>
 
-  <project remote="oe" revision="jethro" name="meta-openembedded" path="poky/meta-openembedded"/>
+  <project remote="oe" revision="morty" name="meta-openembedded" path="poky/meta-openembedded"/>
 
-  <project remote="vct" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
+  <project remote="sla" revision="morty" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
 </manifest>
 
