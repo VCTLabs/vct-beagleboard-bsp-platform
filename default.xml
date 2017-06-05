@@ -13,12 +13,12 @@
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
-  <project remote="vct" revision="morty" name="openembedded-core" path="oe-core"/>
-  <project remote="vct" revision="morty" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="oe-core" revision="morty" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="morty" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="oe-core" revision="1.32" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="vct" revision="morty" name="meta-ti" path="oe-core/meta-ti"/>
-  <project remote="vct" revision="morty" name="meta-ti" path="oe-core/meta-printing"/>
+  <project remote="vct" revision="morty" name="meta-printing" path="oe-core/meta-printing"/>
   <project remote="vct" revision="morty" name="meta-qt5" path="oe-core/meta-qt5"/>
 
   <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
