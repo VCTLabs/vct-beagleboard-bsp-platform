@@ -11,7 +11,7 @@
 
   <project remote="oe-core" revision="zeus" name="openembedded-core" path="oe-core"/>
   <project remote="oe-core" revision="zeus" name="meta-openembedded" path="oe-core/meta-openembedded"/>
-  <project remote="oe-core" revision="1.48.0" name="bitbake" path="oe-core/bitbake"/>
+  <project remote="oe-core" revision="1.48" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="rcn" revision="zeus" name="meta-ti" path="oe-core/meta-ti"/>
 
