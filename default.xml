@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="oe-zeus"/>
+
+  <remote fetch="https://github.com/openembedded" name="oe-core"/>
+  <remote fetch="https://github.com/rcn-ee" name="rcn"/>
+  <remote fetch="https://github.com/sarnold" name="meta-bb"/>
+  <remote fetch="https://github.com/sarnold" name="vct"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
+
+  <project remote="oe-core" revision="zeus" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="zeus" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="oe-core" revision="1.48.0" name="bitbake" path="oe-core/bitbake"/>
+
+  <project remote="rcn" revision="zeus" name="meta-ti" path="oe-core/meta-ti"/>
+
+  <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
+
+  <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+
+  <project remote="meta-qt5" revision="zeus" name="meta-qt5" path="oe-core/meta-qt5"/>
+
+</manifest>
+
