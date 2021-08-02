@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="oe-master"/>
+  <default sync-j="4" revision="oe-dunfell"/>
 
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/sarnold" name="vct"/>
-  <remote fetch="https://github.com/bmwcarit" name="meta-ros"/>
-  <remote fetch="https://github.com/koenkooi" name="meta-uav"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
-  <project remote="oe-core" revision="master" name="openembedded-core" path="oe-core"/>
-  <project remote="oe-core" revision="master" name="meta-openembedded" path="oe-core/meta-openembedded"/>
-  <project remote="oe-core" revision="1.30" name="bitbake" path="oe-core/bitbake"/>
+  <project remote="oe-core" revision="dunfell" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="dunfell" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="oe-core" revision="1.46" name="bitbake" path="oe-core/bitbake"/>
 
-  <project remote="rcn" revision="master" name="meta-ti" path="oe-core/meta-ti"/>
+  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
+  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-arago"/>
+  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-processor-sdk"/>
 
-  <project remote="meta-bb" revision="master" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
+  <project remote="meta-bb" revision="dunfell" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
-  <project remote="vct" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+  <project remote="vct" revision="dunfell" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
-  <project remote="meta-ros" revision="master" name="meta-ros" path="oe-core/meta-ros"/>
-  <project remote="meta-uav" revision="master" name="meta-uav" path="oe-core/meta-uav"/>
-  <project remote="meta-qt5" revision="master" name="meta-qt5" path="oe-core/meta-qt5"/>
-  <project remote="ossystems" revision="master" name="meta-browser" path="oe-core/meta-browser"/>
+  <project remote="meta-qt5" revision="dunfell" name="meta-qt5" path="oe-core/meta-qt5"/>
+  <project remote="ossystems" revision="dunfell" name="meta-browser" path="oe-core/meta-browser"/>
 
 </manifest>
 
