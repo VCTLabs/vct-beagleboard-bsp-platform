@@ -5,7 +5,6 @@
 
   <remote fetch="https://github.com/openembedded" name="oe-core"/>
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
-  <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/sarnold" name="vct"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
@@ -17,8 +16,6 @@
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-arago"/>
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-processor-sdk"/>
-
-  <project remote="meta-bb" revision="dunfell" name="meta-beagleboard" path="oe-core/meta-beagleboard"/>
 
   <project remote="vct" revision="dunfell" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
