@@ -7,6 +7,7 @@
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/sarnold" name="vct"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/OSSystems" name="ossystems"/>
 
   <project remote="oe-core" revision="dunfell" name="openembedded-core" path="oe-core"/>
@@ -14,13 +15,15 @@
   <project remote="oe-core" revision="1.46" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
-  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-arago"/>
-  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-processor-sdk"/>
+  <project remote="rcn" revision="dunfell" name="meta-arago" path="oe-core/meta-arago"/>
+  <project remote="rcn" revision="dunfell" name="meta-processor-sdk" path="oe-core/meta-processor-sdk"/>
+
+  <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-arm"/>
 
   <project remote="vct" revision="dunfell" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
   <project remote="meta-qt5" revision="dunfell" name="meta-qt5" path="oe-core/meta-qt5"/>
-  <project remote="ossystems" revision="dunfell" name="meta-browser" path="oe-core/meta-browser"/>
+  <project remote="ossystems" revision="master" name="meta-browser" path="oe-core/meta-browser"/>
 
 </manifest>
 
