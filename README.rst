@@ -25,6 +25,40 @@ Download the BSP source
 
 At the end of the commands you have every metadata you need to start work with.
 
+Update existing workspace
+-------------------------
+
+In order to bring all the repositories up to date with upstream::
+
+  $ cd clonepi-bsp
+  $ repo sync
+
+If you have local changes, you might also need::
+
+  $ repo rebase
+
+Repo tips
+---------
+
+Some info on how to customize your sync:
+
+  | ``-j JOBS, --jobs=JOBS``  projects to fetch simultaneously (default 4)
+  | ``--no-clone-bundle``     disable use of /clone.bundle on HTTP/HTTPS
+  | ``--no-tags``             don't fetch tags
+
+Fastest full sync::
+
+  $ repo sync --no-tags --no-clone-bundle
+
+Smallest/fastest sync::
+
+  $ repo init -u https://github.com/VCTLabs/vct-clonepi-bsp-platform -b oe-dunfell --no-clone-bundle --depth=1
+  $ repo sync --no-tags --no-clone-bundle --current-branch
+
+
+Image build
+-----------
+
 To start a simple image build::
 
   $ cd oe-core
@@ -60,7 +94,7 @@ For developers - dunfell
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b oe-dunfell
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b oe-mickledore
 
 For intrepid developers and testers - master
 
