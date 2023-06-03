@@ -14,7 +14,7 @@
   <project remote="oe-core" revision="1.46" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-arm"/>
-  <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-security"/>
+  <project remote="yocto" revision="dunfell" name="meta-security" path="oe-core/meta-security"/>
 
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
   <project remote="rcn" revision="dunfell" name="meta-arago" path="oe-core/meta-arago"/>
