@@ -7,13 +7,14 @@
   <remote fetch="https://github.com/rcn-ee" name="rcn"/>
   <remote fetch="https://github.com/sarnold" name="sla"/>
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
 
   <project remote="oe-core" revision="dunfell" name="openembedded-core" path="oe-core"/>
   <project remote="oe-core" revision="dunfell" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="oe-core" revision="1.46" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-arm"/>
+  <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-security"/>
 
   <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
   <project remote="rcn" revision="dunfell" name="meta-arago" path="oe-core/meta-arago"/>
