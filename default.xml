@@ -14,6 +14,7 @@
  
   <project remote="oe" revision="dunfell" name="meta-openembedded" path="poky/meta-openembedded"/>
 
+  <project remote="vct" revision="dunfell" name="meta-printing" path="poky/meta-printing"/>
   <project remote="sla" revision="dunfell" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
 </manifest>
