@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="oe-dunfell"/>
+  <default sync-j="4" revision="poky-dunfell"/>
 
-  <remote fetch="https://github.com/openembedded" name="oe-core"/>
-  <remote fetch="https://github.com/rcn-ee" name="rcn"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/sarnold" name="sla"/>
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
-  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
 
-  <project remote="oe-core" revision="dunfell" name="openembedded-core" path="oe-core"/>
-  <project remote="oe-core" revision="dunfell" name="meta-openembedded" path="oe-core/meta-openembedded"/>
-  <project remote="oe-core" revision="1.46" name="bitbake" path="oe-core/bitbake"/>
+  <project remote="yocto" revision="dunfell" name="poky" path="poky"/>
+  <project remote="yocto" revision="dunfell" name="meta-ti" path="poky/meta-ti"/>
+  <project remote="yocto" revision="dunfell" name="meta-security" path="poky/meta-security"/>
+ 
+  <project remote="oe" revision="dunfell" name="meta-openembedded" path="poky/meta-openembedded"/>
 
-  <project remote="yocto" revision="dunfell" name="meta-arm" path="oe-core/meta-arm"/>
-  <project remote="yocto" revision="dunfell" name="meta-security" path="oe-core/meta-security"/>
-
-  <project remote="rcn" revision="dunfell" name="meta-ti" path="oe-core/meta-ti"/>
-  <project remote="rcn" revision="dunfell" name="meta-arago" path="oe-core/meta-arago"/>
-  <project remote="rcn" revision="dunfell" name="meta-processor-sdk" path="oe-core/meta-processor-sdk"/>
-
-  <project remote="sla" revision="dunfell" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
-  <project remote="vct" revision="dunfell" name="meta-printing" path="oe-core/meta-printing"/>
+  <project remote="sla" revision="dunfell" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
 </manifest>
 
